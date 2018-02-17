@@ -9,19 +9,19 @@ class mailcontroller extends Controller
 {
     function send(){
 
-    	 Mail::send(new sendmail());
-    /*	Mail::send(['text'=>'mail'],['name','lamia'],function($message){
+    	// Mail::send(new sendmail());
+    	Mail::send(['text'=>'mail'],['name','lamia'],function($message){
 
-    		$message->to('lolohadidi999@gmail.com',' To lolo')->subject('test email');
-    		$message->from('lolohadidi999@gmail.com','lamia');
-    	});*/
+    		$message->to('llll@gmail.com',' To lolo')->subject('test email');
+    		$message->from('llll@gmail.com','lamia');
+    	});
     }
-   /* function mid(){
+    function mid(){
     	return view('welcome');
     }
      function midd(){
     	return view('about');
-    }*/
+    }
 
    
 }
